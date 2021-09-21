@@ -1,0 +1,34 @@
+.fechas__tabla {
+    color: white;
+    font-size: 120%;
+}
+
+/* FLEXBOX */
+
+.fechas {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo Fechas */
+
+.fechas__tabla {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid white;
+    padding: 15px;
+}
+
+.pages_fechas {
+    background-image: url(../img/backfechas4.jpg);
+    background-size: cover;
+}
+
+tr:hover {
+    background-color: $dark1;
+    color: white;
+    opacity: 0.5;
+}

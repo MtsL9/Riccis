@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Titillium+Web:wght@300;400;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import "variables";
+@import "bio";
+@import "contacto";
+@import "media";
+@import "fechas";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    background-image: url(../img/img_back.jpg);
+    background-size: cover;
+    font-family: open, sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    background-color: $dark1;
+    height: 18vh;
+}
+
+.header__logo {
+    display: block;
+    float: left;
+    margin-top: 2vh;
+}
+
+.header__logo img {
+    height: $alto1*3;
+    padding: 10px
+}
+
+.header__menu {
+    display: block;
+    width: 60vw;
+    text-align: right;
+    position: relative;
+    bottom: 32px;
+    font-weight: 400;
+    float: right;
+    margin-right: 3vw;
+}
+
+.header__menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 2vw;
+    margin-top: 15vh;
+}
+
+a:hover {
+    color: $blue;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    font-weight: 400;
+}
+
+.titulo_index {
+    color: white;
+    margin-top: 5vh;
+}
+
+.redes {
+    position: fixed;
+    top: 80vh;
+    left: 92vw;
+}
+
+.channel {
+    position: fixed;
+    top: 80vh;
+    left: 88vw;
+}
+
+
+
+.footer {
+    background-color: $dark2;
+    color: white;
+    text-align: center;
+    height: $alto1;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer__text {
+    font-size: 75%;
+    padding-top: 1%;
+
+}
+
+.textoIndex {
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 120%;
+    padding-top: 5vh;
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+}
+
+.contenido1 {
+    width: 50%;
+    padding-left: 10vw;
+    padding-right: 0;
+    margin-left: 3vw;
+    margin-right: 0;
+    background: linear-gradient(left, transparent 10%, black 90%);
+}
+
+.contenido2 {
+    margin-left: 0;
+}
+
+/* Estilo de secciones */
+
+.pages {
+    background-color: $dark2;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-family: titillum web, sans-serif;
+    padding: 3vh;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    font-family: open, sans-serif !important;
+}
+
+.activo {
+    color: $blue;
+    font-weight: 500;
+}
+
+/* Probando Opacity */
+
+
+.event {
+    box-shadow: 7px 14px 14px black;
+    opacity: 0.9;
+}
+
+.header {
+    opacity: 0.9;
+}
+
+.footer {
+    opacity: 0.9;
+}
+
+/* Bootstrap */
+
+i:hover {
+    color: $blue;
+}
+
+nav .header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh !important;
+}
+
+/* Probando Media Queries */
+
+@media (max-width: 768px) {
+    .index {
+        background-image: none;
+        background-color: $dark2;
+        overflow-x: hidden;
+    }
+
+    .header__menu {
+        display: block;
+        width: 100%;
+        background-color: $dark2;
+        padding-top: 2vh;
+        float: right;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 6vh;
+        margin-right: 0;
+    }
+
+    .header__menu ul {
+        margin: 0;
+    }
+
+    .header__menu ul li {
+        margin-top: 0;
+        margin-left: 0;
+        padding-right: 7%;
+    }
+
+    .header__logo {
+        display: block;
+        width: 100vw;
+    }
+
+    .header__logo img {
+        padding: 0;
+    }
+
+    .header__menu ul {
+        margin-top: 5px;
+    }
+
+    .container {
+        width: 70vw;
+        margin-top: 15vh;
+        margin-left: 0;
+
+    }
+
+    .redes {
+        position: fixed;
+        top: 80vh;
+        left: 25%;
+    }
+
+    .channel {
+        position: fixed;
+        top: 80vh;
+        left: 50%;
+    }
+
+}

@@ -1,0 +1,46 @@
+.pagesContacto {
+    background-image: url(../img/back2.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: .9;
+}
+
+.seccionContacto {
+    background-color: $dark2;
+    padding: 20px;
+    padding-top: 0;
+    width: $ancho1*3;
+    height: 45vh;
+    margin: auto;
+    box-shadow: 7px 14px 14px black;
+}
+
+.h2contacto {
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.inputform {
+    width: 99%;
+    margin: auto;
+    background-color: $dark2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+    color: white;
+}
+
+#consultas {
+    padding-bottom: 46px;
+}
+
+.boton {
+    color: white;
+    width: 49%;
+    height: 36px;
+    background-color: $dark1;
+    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
