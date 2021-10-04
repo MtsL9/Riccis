@@ -271,13 +271,12 @@ tr:hover {
 }
 
 .header__logo img {
-  height: 15vh;
+  height: 13.5vh;
   padding: 10px;
 }
 
 .header__menu {
   display: block;
-  width: 60vw;
   text-align: right;
   position: relative;
   bottom: 32px;
@@ -382,6 +381,10 @@ h1 {
   padding: 3vh;
 }
 
+i {
+  font-size: 200%;
+}
+
 h2 {
   color: white;
   text-align: center;
@@ -397,12 +400,6 @@ body {
 }
 
 /* Probando Opacity */
-.event {
-  -webkit-box-shadow: 7px 14px 14px black;
-          box-shadow: 7px 14px 14px black;
-  opacity: 0.9;
-}
-
 .header {
   opacity: 0.9;
 }
@@ -416,71 +413,91 @@ i:hover {
   color: #1e0eff;
 }
 
-nav .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 2vh !important;
-}
-
-/* Probando Media Queries */
+/* Media Queries */
 @media (max-width: 768px) {
   .index {
-    background-image: none;
     background-color: #0d0e10;
+    background-image: none;
+    overflow: scroll;
     overflow-x: hidden;
   }
   .header__menu {
-    display: block;
-    width: 100%;
-    background-color: #0d0e10;
-    padding-top: 2vh;
-    float: right;
-    margin-left: 0;
-    text-align: center;
-  }
-  nav {
-    margin-top: 6vh;
-    margin-right: 0;
-  }
-  .header__menu ul {
-    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    position: none;
+    float: none;
+    width: 60%;
   }
   .header__menu ul li {
-    margin-top: 0;
-    margin-left: 0;
-    padding-right: 7%;
+    margin-top: 2vh;
   }
-  .header__logo {
-    display: block;
-    width: 100vw;
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5vh;
   }
-  .header__logo img {
-    padding: 0;
+  .contenido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .header__menu ul {
-    margin-top: 5px;
+  .contenido1 {
+    width: 100%;
+    margin-top: 25vh;
   }
-  .container {
-    width: 70vw;
-    margin-top: 15vh;
-    margin-left: 0;
+  .contenido2 {
+    width: 100%;
+    margin-left: auto;
+  }
+  .follow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
   .redes {
-    position: fixed;
-    top: 80vh;
-    left: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
+    width: 48%;
   }
   .channel {
-    position: fixed;
-    top: 80vh;
-    left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
+    width: 48%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: 4%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
