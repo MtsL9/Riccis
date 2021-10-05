@@ -9,15 +9,14 @@
     background-color: $dark2;
     padding: 20px;
     padding-top: 0;
-    width: $ancho1*3;
-    height: 45vh;
+    width: 50vw;
     margin: auto;
     box-shadow: 7px 14px 14px black;
 }
 
 .h2contacto {
     padding: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 .inputform {
@@ -43,4 +42,14 @@
     border-radius: 4px;
     border: 1px solid #e2e2e2;
     margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    .seccionContacto {
+        width: 80vw;
+    }
+
 }

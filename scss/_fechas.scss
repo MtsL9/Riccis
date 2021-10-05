@@ -32,3 +32,39 @@ tr:hover {
     color: white;
     opacity: 0.5;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    .pages_fechas {
+        background-color: $dark2;
+        background-image: none;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        position: none;
+        float: none;
+        width: 60%;
+      }
+    
+      .header__menu ul li {
+        margin-top: 2vh;
+      }
+    
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+      }
+
+      h1 {
+          margin-top: 25vh;
+      }
+
+    }
