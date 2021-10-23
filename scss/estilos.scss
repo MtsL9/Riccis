@@ -73,13 +73,15 @@ a {
 .redes {
     position: fixed;
     top: 80vh;
-    left: 92vw;
+    left: 53vw;
+    margin-top: 5vh;
 }
 
 .channel {
     position: fixed;
     top: 80vh;
-    left: 88vw;
+    left: 47vw;
+    margin-top: 5vh;
 }
 
 
@@ -112,10 +114,12 @@ a {
 .contenido {
     display: flex;
     width: 100%;
+    justify-content: center;
+    margin-top: 2vh;
 }
 
 .contenido1 {
-    width: 50%;
+    width: 60%;
     padding-left: 10vw;
     padding-right: 0;
     margin-left: 3vw;
@@ -125,6 +129,15 @@ a {
 
 .contenido2 {
     margin-left: 0;
+    max-width: 450px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
 }
 
 /* Estilo de secciones */
@@ -176,6 +189,18 @@ i:hover {
     color: $blue;
 }
 
+a.navbar-brand {
+    width: 50%;
+}
+
+.navbar-nav {
+    margin-left: 15vw;
+}
+
+.nav-item {
+    margin-left: 2vw;
+    padding-top: 4vh;
+}
 
 /* Media Queries */
 
@@ -195,56 +220,69 @@ i:hover {
         position: none;
         float: none;
         width: 60%;
-      }
-    
-      .header__menu ul li {
+    }
+
+    .header__menu ul li {
         margin-top: 2vh;
-      }
-    
-      ul {
+    }
+
+    ul {
         display: flex;
         flex-direction: column;
         margin-top: 5vh;
-      }
+    }
 
-      .contenido {
-          flex-direction: column;
-      }
+    .contenido {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
 
-      .contenido1 {
-          width: 100%;
-          margin-top: 25vh;
-      }
+    .contenido1 {
+        width: 100%;
+        margin-top: 25vh;
+        margin-bottom: 5vh;
+        padding-left: 0;
+        margin-left: 0;
+    }
 
-      .contenido2 {
-          width: 100%;
-          margin-left: auto;
-      }
+    .contenido2 {
+        width: 100%;
+    }
 
-      .follow {
-          display: flex;
-          flex-direction: row;
-          height: 10vh;
-          margin-top: 5vh;
-          margin-bottom: 5vh;
-      }
+    .textoIndex {
+        width: 70%;
+    }
 
-      .redes {
+    .follow {
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .redes {
         display: flex;
         flex-direction: column;
         position: static;
         width: 48%;
+        margin-top: 0;
 
     }
-    
+
     .channel {
         display: flex;
         flex-direction: column;
         position: static;
         width: 48%;
-        align-items:flex-end;
+        align-items: flex-end;
         margin-right: 4%;
-        
+        margin-top: 0;
+
+    }
+
+    a.navbar-brand {
+        width: auto;
     }
 
 }

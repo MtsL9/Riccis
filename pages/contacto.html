@@ -15,49 +15,60 @@
 
 <body class="pagesContacto">
     <header class="header">
-        <div class="header__logo">
-            <img src="../img/logo1.png">
-        </div>
-        <nav class='header__menu'>
-            <ul>
-                <li>
-                    <a href='../index.html'>Home</a>
-                </li>
-                <li>
-                    <a href='media.html'>Media</a>
-                </li>
-                <li>
-                    <a href='fechas.html'>Fechas</a>
-                </li>
-                <li>
-                    <a href='bio.html'>Bio</a>
-                </li>
-                <li>
-                    <a class="activo" href='contacto.html'>Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid header__logo">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo1.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fechas.html">Fechas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <h1>Contacto</h1>
     <div class="seccionContacto">
-        <h2 class="h2contacto">Envianos tu consulta</h2>
-        <input required name='nombre' class="inputform" type='text' placeholder="Nombre">
-        <input required name='email' class="inputform" type='email' placeholder="Email">
-        <input type="text" class="inputform" id="consultas" placeholder="Tu mensaje">
-        <input type='submit' class="boton" value='Enviar'>
-        <input type='reset' class="boton" value='Borrar'>
+        <form>
+            <h2 class="h2contacto">Envianos tu consulta</h2>
+            <input required name='nombre' class="inputform" type='text' placeholder="Nombre">
+            <input required name='email' class="inputform" type='email' placeholder="Email">
+            <input type="text" class="inputform" id="consultas" placeholder="Tu mensaje">
+            <input type='submit' class="boton" value='Enviar'>
+            <input type='reset' class="boton" value='Borrar'>
+        </form>
     </div>
     <div class="follow">
-    <div class="channel">
-        <a class="channel__youtube" href='https://www.youtube.com/channel/UCpc52qWNZIpne5_n5Q0jDhA' target="_blank">
-            <i class="bi bi-youtube"></i>
-        </a>
-    </div>
-    <div class="redes">
-        <a class="redes__ig" href='https://www.instagram.com/riccis.mn' target="_blank">
-            <i class="bi bi-instagram"></i>
-        </a>
-    </div>
+        <div class="channel">
+            <a class="channel__youtube" href='https://www.youtube.com/channel/UCpc52qWNZIpne5_n5Q0jDhA' target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+        <div class="redes">
+            <a class="redes__ig" href='https://www.instagram.com/riccis.mn' target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
     </div>
     <footer class="footer">
         <p class="footer__text">Todos los derechos reservados. 2021</p>
